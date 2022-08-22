@@ -84,7 +84,7 @@ p {
   box-shadow: 0 7px 25px -10px rgba(150, 170, 180, 0.7);
 }
 .detail {
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.5);
   padding: 1rem;
   z-index: 1;
   border-radius: 10px;
@@ -111,6 +111,9 @@ p {
 }
 .detail.one {
   grid-area: 1/3/4/4;
+  border: 2px solid #0046ff;
+}
+.detail:active {
   border: 2px solid #0046ff;
 }
 .detail.two {
