@@ -136,11 +136,10 @@ p {
 }
 .left-content {
   grid-area: 1/1/2/3;
-  padding: 1.5rem 1rem 0;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #ddd;
 }
-div.row:last-child .left-content {
-  padding-bottom: 1.5rem;
-}
+
 .left-content h3 {
   display: inline-block;
   font-family: AzoSansBold;
@@ -158,24 +157,27 @@ div.row:last-child .left-content {
 .left-content p {
   margin-top: 0.4rem;
 }
-.left-content:after,
 .detail p.sub:after {
   content: "";
   display: block;
   width: 100%;
   border-top: 1px solid #ddd;
+}
+.left-content:after {
   margin-top: 1.5rem;
 }
 .detail p.sub:after {
   margin-top: 1rem;
 }
-div.row:last-child .left-content:after,
-div.row:last-child div.icon:after {
-  display: none;
+div.row:first-child .left-content,
+div.row:first-child div.icon {
+  border-top: 0;
 }
 .icon {
   z-index: 2;
-  place-self: center;
+  margin: 0 1rem;
+  border-top: 1px solid #ddd;
+  place-items: center;
 }
 .icon.one {
   grid-area: 1/3/2/4;
